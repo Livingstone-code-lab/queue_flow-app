@@ -37,7 +37,7 @@ export default function InstitutionSetup({institutionName, setInstitutionName, c
     return (
          <div className="flex flex-col w-100 h-auto bg-white p-6 justify-center items-center border border-gray-100 rounded-lg shadow-md gap-6 mt-5">
             <div className="relative w-full flex justify-around">
-                <span className="absolute left-0 flex justify-center items-center w-6 outline outline-1 outline-gray-100 rounded-[10px] bg-white px-5" onClick={() => scrollBack("/chooseview")}>&lt;</span>
+                <span className="absolute left-0 flex justify-center items-center w-6 outline outline-1 outline-gray-100 rounded-[10px] bg-white px-5 py-1" onClick={() => scrollBack("/chooseview")}>&lt;</span>
                 <div className="flex justify-center items-center gap-3">
                   <Users className="w-7 h-7 text-white outline outline-1 outline-indigo-700 rounded-[10px] bg-indigo-700 p-1" />
                   <h2 className="font-extrabold text-2xl">QueueFlow</h2>

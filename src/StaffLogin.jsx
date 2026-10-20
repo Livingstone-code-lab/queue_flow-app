@@ -61,10 +61,12 @@ export default function StaffLogin({institutionName, setIsStaffLoggedIn, staffPa
      
     return (
          <div className="flex flex-col w-100 h-auto bg-white p-6 border border-gray-100 rounded-lg shadow-md gap-6">
-            <div className="flex gap-2">
-                <span className="w-6 outline outline-1 outline-gray-100 rounded-[10px] bg-white p-1" onClick={() => navigates("/institution")}>&lt;</span>
-                <User className="w-7 h-7 text-white outline outline-1 outline-indigo-700 rounded-[10px] bg-indigo-700 p-1" />
-                <h3 className="flex font-bold text-xl text-black">QueueFlow</h3>
+            <div className="flex gap-3">
+                <span className="flex justify-center items-center w-6 outline outline-1 outline-gray-100 rounded-[10px] bg-white py-1 px-5" onClick={() => navigates("/institution")}>&lt;</span>
+                <div className="flex gap-2">
+                  <User className="w-7 h-7 text-white outline outline-1 outline-indigo-700 rounded-[10px] bg-indigo-700 p-1" />
+                  <h3 className="flex font-bold text-xl text-black">QueueFlow</h3>
+                </div>
             </div>
 
             <div className="flex flex-col">

@@ -146,7 +146,7 @@ export default function CreateAccount({createName, setCreateName, createEmail, s
 
                 <div className="flex flex-col gap-1">
                      <label className="flex text-black text-xs font-normal">Email</label>
-                     <input pattern="[A-Za-z\s.,@!?'-]+" value={createEmail} onChange={(e) => setCreateEmail(e.target.value)} className="w-full outline outline-1 outline-gray-200 rounded-[8px] focus:outline-indigo-600 focus:outline-2 placeholder:text-sm placeholder:font-bold px-3 pb-1" type="text" placeholder="........" />
+                     <input value={createEmail} onChange={(e) => setCreateEmail(e.target.value)} className="w-full outline outline-1 outline-gray-200 rounded-[8px] focus:outline-indigo-600 focus:outline-2 placeholder:text-sm placeholder:font-bold px-3 pb-1" type="text" placeholder="........" />
                      {createError.email && <p className="text-xs text-red-500">{createError.email}</p>}
                 </div>
 
@@ -167,13 +167,13 @@ export default function CreateAccount({createName, setCreateName, createEmail, s
 
                 <div className="flex flex-col gap-1">
                    <label className="flex text-black text-xs font-normal">Password</label>
-                   <input pattern="[A-Za-z\s.,@&#!?'-]+" value={createPass} onChange={(e) => setCreatePass(e.target.value)} className="w-full outline outline-1 outline-gray-200 rounded-[8px] focus:outline-indigo-600 focus:outline-2 placeholder:text-[12px] px-3 pb-1" type="password" placeholder="Min. 8 characters" />
+                   <input value={createPass} onChange={(e) => setCreatePass(e.target.value)} className="w-full outline outline-1 outline-gray-200 rounded-[8px] focus:outline-indigo-600 focus:outline-2 placeholder:text-[12px] px-3 pb-1" type="password" placeholder="Min. 8 characters" />
                    {createError.password && <p className="text-xs text-red-500">{createError.password}</p>}
                 </div>
 
                 <div className="flex flex-col gap-1">
                    <label className="flex text-black text-xs font-normal">Confirm Password</label>
-                   <input pattern="[A-Za-z\s.,@&#!?'-]+" value={createConfirmPass} onChange={(e) => setCreateConfirmPass(e.target.value)} className="w-full outline outline-1 outline-gray-200 rounded-[8px] focus:outline-indigo-600 focus:outline-2 placeholder:text-[12px] px-3 pb-1" type="password" placeholder="Re-enter password" />
+                   <input value={createConfirmPass} onChange={(e) => setCreateConfirmPass(e.target.value)} className="w-full outline outline-1 outline-gray-200 rounded-[8px] focus:outline-indigo-600 focus:outline-2 placeholder:text-[12px] px-3 pb-1" type="password" placeholder="Re-enter password" />
                    {createError.confirmPassword && <p className="text-xs text-red-500">{createError.confirmPassword}</p>}
                 </div>
 

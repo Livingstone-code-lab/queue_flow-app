@@ -36,7 +36,7 @@ export default function Home() {
           </div>
 
           <Link to="/stafflogin" className="hidden rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm font-semibold text-gray-700 shadow-sm transition hover:border-indigo-200 hover:bg-indigo-50 hover:text-indigo-600 sm:block">Staff Login</Link>
-        </nav>
+        </nav> 
 
         {/* ================= HERO CONTENT ================= */}
         <div className="relative z-10 mx-auto grid min-h-[calc(100vh-88px)] w-full max-w-7xl items-center gap-14 px-6 pb-16 pt-8 lg:grid-cols-2 lg:px-10 lg:pb-20">
